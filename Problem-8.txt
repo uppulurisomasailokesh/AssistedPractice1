@@ -1,0 +1,19 @@
+package com.assistedpractic;
+
+public class String_convertion 
+{
+	public static void main(String[] args) 
+	{
+		String str = "Welcome to Mphasis!";
+		
+	    StringBuffer stringBuffer = new StringBuffer(str);
+	    
+	    StringBuilder stringBuilder = new StringBuilder(str);
+	    
+	    System.out.println("String: " + str);
+	    System.out.println("StringBuffer: " + stringBuffer);
+	    System.out.println("StringBuilder: " + stringBuilder);
+	    }
+	
+
+}

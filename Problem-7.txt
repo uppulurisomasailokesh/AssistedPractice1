@@ -1,0 +1,74 @@
+package com.assistedpractic;
+public class Innerclasses
+{
+	private String msg="Welcome to Java"; 
+	class Inner{  
+		  void hello()
+		  {
+			  System.out.println(msg+", Let us start learning Inner Classes");
+		  }  
+		 }  
+
+		public static void main(String[] args) {
+
+			Innerclasses obj = new Innerclasses ();
+			
+			Innerclasses.Inner in=obj.new Inner();  
+			in.hello();  
+		}
+	
+
+}
+===============================================================================
+package com.assistedpractic;
+
+public class Innerclass1 
+{
+		private String msg="Inner Classes";
+
+		 void display(){  
+			 class Inner{  
+				 void msg(){
+					 System.out.println(msg);
+				 }  
+		  }  
+		  
+		  Inner l=new Inner();  
+		  l.msg();  
+		 }  
+
+		 
+		public static void main(String[] args)
+		{
+			Innerclass1  ob=new Innerclass1 ();  
+			ob.display();  
+		}
+		
+}
+===============================================================================
+package com.assistedpractic;
+
+abstract class Innerclass2 
+{
+	public abstract void display();
+	public class innerClassAssisted3 {
+
+		public static void main(String[] args)
+		{
+			Innerclass2 i = new Innerclass2() 
+			{
+
+		         public void display() {
+		            System.out.println("Anonymous Inner Class");
+		         }
+		      };
+		      i.display();
+		   }
+		}
+
+
+
+
+
+
+}
